@@ -1,0 +1,10 @@
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red; /* Color de fondo deseado */
+    opacity: 0.5; /* Ajusta la opacidad para que no cubra la imagen */
+    z-index: -1; /* Posiciona la capa de fondo detrás de la imagen */
+  }

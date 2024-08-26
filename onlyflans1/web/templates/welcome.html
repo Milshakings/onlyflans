@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron bg-dark text-white px-5 py-5">
+  <h1 class="display-4">¡Bienvenido, {{ user.username }}!</h1>
+  <p class="lead">Esta es tu página de bienvenida para nuestros sabores ocultos.</p>
+  <hr class="my-4">
+  <p> Tenemos una lista de productos exclusivos para ti ¿Quieres conocerlos?</p>
+  <a class="btn btn-danger btn-lg" href="{% url 'contacto' %}" role="button">Contáctanos</a>
+</div>
+
+<div class="container">
+  <h1 class = "text-center fw-bolder bg-light" >Flanes Privados</h1>
+</div>
+
+  <div class="container">
+  <div class="row">
+    {% for flan in flans %}
+      <div class="col-md-4">
+        <div class="card text-dark bg-light my-5">
+          <div class="card-body">
+          <img class = "img-thumbnail" src="{{flan.image.url }}" alt="{{ flan.name }}">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h5 class="card-title">{{ flan.name }}</h5>
+            </li>
+            <li class="list-group-item">
+              <p class="card-text">{{ flan.description }}</p>
+            </li>
+          </ul>
+          
+          
+       </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  </div>
+{% endblock %}

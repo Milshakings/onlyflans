@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h1 class="bg-danger text-white my-5 py-4 text-center fw-bolder">
+  Bienvenido a nuestra aplicación reina de los flanes. 
+  </h1>
+
+  <h1 class = "text-center fw-bolder bg-light" >Flanes Públicos</h1>
+</div>
+
+
+  
+
+  <div class="container">
+  <div class="row">
+    {% for flan in flans %}
+      <div class="col-md-4">
+        <div class="card text-dark bg-light my-5">
+          <div class="card-body">
+          <img class = "img-thumbnail" src="{{flan.image.url }}" alt="{{ flan.name }}">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h5 class="card-title">{{ flan.name }}</h5>
+            </li>
+            <li class="list-group-item">
+              <p class="card-text">{{ flan.description }}</p>
+            </li>
+          </ul>
+          
+          
+       </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  </div>
+{% endblock %}

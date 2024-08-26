@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class = "text-center bg-dark text-white mt-3">Bienvenidos a nuestras comunidades de fanaticos de los Flanes </h1>
+
+<div class="container bg-light text-danger text-center">
+<h2 > ¿Quieres unir tu comunidad? </h2>
+<a class="btn btn-danger" href="{% url 'contacto' %}"> Unete Aqui</a>
+</div>
+
+<div class="container">
+    <div class="row p-5">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="/static/img/flan_friends.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Flan & Friends</h5>
+              <p class="card-text">Un grupo divertido y delicioso dedicado a compartir recetas de flan y postres. </p>
+              <a href="#" class="btn btn-light"> Conócenos</a>
+            </div>
+          </div>
+        
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="/static/img/yo_flan.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Yo, Flan</h5>
+              <p class="card-text">El lugar para los amantes del flan, compartiendo sus creaciones y experiencias con este postre.</p>
+              <a href="#" class="btn btn-light"> Conócenos</a>
+            </div>
+          </div>
+        
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="/static/img/recetas_fl.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Recetas Flaniferas</h5>
+              <p class="card-text"> Donde se comparten ideas creativas y deliciosas recetas relacionadas con el flan..</p>
+              <a href="#" class="btn btn-light"> Conócenos</a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row p-5">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="/static/img/quien.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> ¿Quien se robó mi flan?</h5>
+              <p class="card-text"> Un misterioso grupo donde se comparte humor y anécdotas relacionadas con el flan.</p>
+              <a href="#" class="btn btn-light"> Conócenos</a>
+            </div>
+          </div>
+        
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="/static/img/no_vives.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> No vive de flanes </h5>
+              <p class="card-text">Grupo dedicado a explorar otros postres y recetas, sin perder de vista el amor por el flan.</p>
+              <a href="#" class="btn btn-light"> Conócenos</a>
+            </div>
+          </div>
+        
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="/static/img/flantastico.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Flantásticos </h5>
+              <p class="card-text">Un grupo de entusiastas del flan que comparten su pasión por este postre en todas sus formas.</p>
+              <a href="#" class="btn btn-light"> Conócenos</a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+{% endblock %}

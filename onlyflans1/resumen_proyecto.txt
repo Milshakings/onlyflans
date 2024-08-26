@@ -1,0 +1,17 @@
+Resumen Proyecto "Onlyflans"
+
+Creador: Raul Galleguillos
+
+Descripción: Un sitio destinado a los fanáticos del postre conocido como flan en sus múltiples sabores.
+
+Contenido Base:
+-Inicio
+-Acerca
+-Contacto, el que Guia a Success
+-Inicio de Sesión , el que guia a "Bienvenido"
+
+Se Agregaron
+- Atributo customer_city (ciudad) en la página de Contacto
+- Modelo Comunity con su página "Comunity
+- Ruta de "Comunity"
+
